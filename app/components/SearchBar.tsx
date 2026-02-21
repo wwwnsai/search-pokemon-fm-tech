@@ -38,7 +38,9 @@ export default function SearchBar() {
         onClick={onSearch}
         className="absolute right-1 sm:right-2 top-1 sm:top-1.5 bottom-1 sm:bottom-1.5 px-2.5 sm:px-5 bg-gray-800 text-white text-xs sm:text-sm font-bold rounded-lg sm:rounded-xl hover:bg-gray-700 active:scale-95 transition-all shadow-sm"
       >
-        Search
+        <svg className="w-5 h-5 text-slate-400 group-focus-within:text-blue-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+        </svg>
       </button>
     </div>
   );
