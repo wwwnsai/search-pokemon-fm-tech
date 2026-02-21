@@ -28,7 +28,7 @@ export default function SearchBar() {
         </svg>
       </div>
       <input
-        className="w-full bg-slate-100 border-none rounded-2xl py-3 pl-12 pr-24 text-slate-700 placeholder-slate-400 focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all outline-none"
+        className="w-full bg-gray-100 border-none rounded-2xl py-2 sm:py-3 pl-12 pr-16 sm:pr-24 text-sm sm:text-base text-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-blue-500/20 focus:bg-white transition-all outline-none"
         value={value}
         onChange={(e) => setValue(e.target.value)}
         onKeyDown={(e) => e.key === 'Enter' && onSearch()}
@@ -36,7 +36,7 @@ export default function SearchBar() {
       />
       <button
         onClick={onSearch}
-        className="absolute right-2 top-1.5 bottom-1.5 px-5 bg-slate-800 text-white text-sm font-bold rounded-xl hover:bg-slate-700 active:scale-95 transition-all shadow-sm"
+        className="absolute right-1 sm:right-2 top-1 sm:top-1.5 bottom-1 sm:bottom-1.5 px-2.5 sm:px-5 bg-gray-800 text-white text-xs sm:text-sm font-bold rounded-lg sm:rounded-xl hover:bg-gray-700 active:scale-95 transition-all shadow-sm"
       >
         Search
       </button>
