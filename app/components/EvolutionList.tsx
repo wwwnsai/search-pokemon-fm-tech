@@ -23,7 +23,7 @@ export default function EvolutionList({ evolutions }: { evolutions?: Evolution[]
                         className="group flex flex-col items-center gap-2 p-3 rounded-2xl hover:bg-gray-100 hover:shadow-md transition-all duration-300 active:scale-95"
                     >
                         <div className="relative w-24 h-24">
-                            <div className="absolute inset-0 scale-90 group-hover:scale-100 transition-transform duration-300"></div>
+                            <div className="absolute scale-90 group-hover:scale-100 transition-transform duration-300"></div>
                             <img
                                 src={e.image}
                                 alt={e.name}
